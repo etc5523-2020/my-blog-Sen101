@@ -7,3 +7,9 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Welcome to my blog! It will record my learning about ETC5523.
+
+There will be some analysis of different data in this blog, I hope you can enjoy it.
+
+`r knitr::include_graphics("Images/ppp.jpg")`
