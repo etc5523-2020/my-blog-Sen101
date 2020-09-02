@@ -1,0 +1,12 @@
+name: "Blog"
+title: "5523 Blog"
+description: |
+  5523 Blog
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
