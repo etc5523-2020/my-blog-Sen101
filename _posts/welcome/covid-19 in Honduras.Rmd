@@ -187,7 +187,7 @@ Table \@ref(fig:t3) shows weekly cumulative cases in Honduras. In this table it 
 In general, at present the situation in Honduras tends to be stable, there is no surge, but the situation is not getting better. The low recovery rate is a big problem in Honduras.
 
 
-# References
+# Packages
 
 Thanks for the providers of these packages used as follows:
 
