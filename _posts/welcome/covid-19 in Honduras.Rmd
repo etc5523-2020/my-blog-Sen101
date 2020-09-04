@@ -1,0 +1,188 @@
+---
+title: "covid-19 in Honduras"
+description: |
+ This blog will introduce the COVID-19 situation in Honduras
+author:
+  - name: Sen Wang 
+    url: {}
+date: 09-03-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - COVID-19
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+```{r libraries}
+library(coronavirus)
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+library(lubridate)
+library(kableExtra)
+library(knitr)
+library(DT)
+library(sparkline)
+```
+
+```{css, echo = FALSE}
+thead {
+  background-color: #006DAE;
+  color: white;
+}
+```
+
+# Introduction
+
+This blog gives insights on the spread of novel Coronavirus in Honduras. It is a contagious respiratory virus, outbreak of it was first identified in Wuhan, Hubei, China in December 2019, and was recognized as pandemic by the World Health Organization (WHO) on Mar 11, 2020. 
+
+
+# Data description
+
+This dataset comes from  R package `coronavirus`[@coronavirus], which contains the daily summary of Coronavirus cases (confirmed, death, and recovered), by state/province. The source is from Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE) Coronavirus. The period covered is from January 22 to July 31.
+
+There are 7 vars and 150720 obs in the dataset.
+The var explain:
+*date* - Date in YYYY-MM-DD format
+*province* - Name of province/state
+*country* - Name of country/region
+*lat* - Latitude point
+*long* - Longitude point
+*type* - An indicator for the type of cases 
+*cases* - the number of daily cases 
+
+```{r load-data}
+data("coronavirus")
+
+covid_Honduras <- coronavirus %>%
+  filter(country == "Honduras")
+```
+
+# Analysis
+
+```{r p1,fig.cap = "COVID-19 cases in Honduras"}
+p1 <- covid_Honduras %>%
+  ggplot(aes(x = date, y = cases, color = type)) +
+  geom_line() +
+  theme_light() +
+  theme(legend.title = element_blank())  +
+  theme(axis.text = element_blank()) 
+ggplotly(p1)
+```
+
+Figure \@ref(fig:p1) shows us the daily number of confirmed cases, recovered cases and deaths from January 22 to July 31. After an outbreak of one or two months, the epidemic is now in a stable phase.
+
+```{r}
+covid_Honduras2 <- covid_Honduras %>%
+  select(-province, -lat, -long) %>%
+  pivot_wider(names_from = type,
+              values_from = cases) %>%
+  mutate(week = week(date) - 3) %>%
+  group_by(week) %>%
+  summarise(confirmed_weekly = sum(confirmed),
+         death_weekly = sum(death),
+         recovered_weekly = sum(recovered)) %>%
+  mutate(active_weekly = confirmed_weekly - death_weekly - recovered_weekly) %>%
+  mutate(confirmed_cum = cumsum(confirmed_weekly),
+         death_cum = cumsum(death_weekly),
+         recovered_cum = cumsum(recovered_weekly),
+         active_cum = cumsum(active_weekly))
+```
+
+
+
+```{r}
+avg_Honduras <- covid_Honduras2 %>%
+  summarise(confirmed = mean(confirmed_weekly),
+            death = mean(death_weekly),
+            recovered = mean(recovered_weekly)) %>%
+  pivot_longer(c("confirmed", "death", "recovered"), names_to = "type", values_to = "avg")
+
+med_Honduras <- covid_Honduras2 %>%
+  summarise(confirmed = median(confirmed_weekly),
+            death = median(death_weekly),
+           recovered = median(recovered_weekly)) %>%
+  pivot_longer(c("confirmed", "death", "recovered"), names_to = "type", values_to = "med")
+  
+summary_Honduras <- merge(avg_Honduras, med_Honduras, by="type", all.x = TRUE)  
+```
+
+```{r t1,fig.cap = "Summary of Honduras weekly cases"}
+kable(summary_Honduras, caption = "Summary of Honduras weekly cases") %>% kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+In the Table 1, we can clearly know the average and median number of new confirmed cases, deaths and recoveries per week in Honduras.
+
+
+```{r}
+covid_Honduras_weekly <- covid_Honduras2 %>%
+  select(1:5) %>%
+  mutate(death_rate = if_else(confirmed_weekly > 0,
+                              round(death_weekly/confirmed_weekly*100), 0),
+         recovered_rate = if_else(confirmed_weekly > 0, 
+                                  round(recovered_weekly/confirmed_weekly*100), 0),
+         active_rate = if_else(confirmed_weekly > 0, 
+                               round(active_weekly/confirmed_weekly*100), 0))
+```
+
+```{r t2,fig.cap = "The weekly cases in Honduras"}
+datatable(covid_Honduras_weekly,
+          escape = FALSE,
+          filter = 'top',
+          caption = htmltools::tags$caption('The weekly cases in Honduras'),
+          options = list(paging = FALSE,
+                         scrollX='400px',
+                         dom = "t",
+                         fnDrawCallback = htmlwidgets::JS(
+  '
+function(){
+  HTMLWidgets.staticRender();
+}
+'
+))) %>% 
+  spk_add_deps()
+```
+
+Table \@ref(fig:t2) shows the number of new confirmed cases per week, the number of recovered cases, the number of deaths, the number of active cases, the mortality rate, the recovery rate and the active rate. We can very simply use the interactive function to know the maximum number of new cases in a week `r max(covid_Honduras_weekly$confirmed_weekly)` or the number of new deaths in a week `r max(covid_Honduras_weekly$death_weekly)` and so on. We can see that at weeks 23, 24, 26, 27, the new cases were particularly high above 5,000, but at week 28, there were only 1554 new cases, and because this data is not fully documented at week 28, we don't have two days of data, so we can't tell if the situation is getting better. Next part I will build a weekly cumulative table of cases in Honduras for comparison.
+
+```{r}
+covid_Honduras_cum <- covid_Honduras2 %>%
+  select(1, 6:9) %>%
+  mutate(death_cum_rate = if_else(confirmed_cum > 0,
+                              round(death_cum/confirmed_cum*100), 0),
+         recovered_cum_rate = if_else(confirmed_cum > 0, 
+                                  round(recovered_cum/confirmed_cum*100), 0),
+         active_cum_rate = if_else(confirmed_cum > 0, 
+                               round(active_cum/confirmed_cum*100), 0))
+```
+
+```{r t3,fig.cap="The cumlative cases in Honduras"}
+datatable(covid_Honduras_cum,
+          escape = FALSE,
+          filter = 'top',
+          caption = htmltools::tags$caption('The cumlative cases in Honduras'),
+          options = list(paging = FALSE,
+                         scrollX='400px',
+                         dom = "t",
+                         fnDrawCallback = htmlwidgets::JS(
+  '
+function(){
+  HTMLWidgets.staticRender();
+}
+'
+))) %>% 
+  spk_add_deps()
+```
+
+Table \@ref(fig:t3) shows weekly cumulative cases in Honduras. In this table it is hard to know whether the epidemic is still serious, but we can see that the mortality rate is very low and the current problem in Honduras, the treatment rate is very low, which leads to a high rate of activity.
+
+# Conclusion
+
+In general, at present the situation in Honduras tends to be stable, there is no surge, but the situation is not getting better. The low recovery rate is a big problem in Honduras.
+
+
+
