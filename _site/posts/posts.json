@@ -1,5 +1,23 @@
 [
   {
+    "path": "posts/Blog2/",
+    "title": "covid-19 in South Korea",
+    "description": "This blog will introduce the COVID-19 situation in South Korea",
+    "author": [
+      {
+        "name": "Sen Wang",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-11",
+    "categories": [
+      "COVID-19"
+    ],
+    "preview": {},
+    "last_modified": "2020-09-11T02:34:19+10:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "covid-19 in Honduras",
     "description": "This blog will introduce the COVID-19 situation in Honduras",

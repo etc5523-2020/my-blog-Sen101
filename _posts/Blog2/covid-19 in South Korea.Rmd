@@ -1,0 +1,150 @@
+---
+title: "covid-19 in South Korea"
+description: |
+ This blog will introduce the COVID-19 situation in South Korea
+author:
+  - name: Sen Wang 
+    url: {}
+date: 09-11-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - COVID-19
+bibliography: references.bib
+biblio-style: authoryear-comp
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(plotly)
+```
+
+# Introduction
+
+Coronavirus is an infectious coronavirus from Wuhan, China. With cities quarantined and hospitals overwhelmed, the new virus has caused panic in many countries. This blog will analyze the Coronavirus situation in Korea
+
+# Data description
+
+This dataset comes from the report materials of KCDC and local governments.
+
+There are 14 vars and 5165 obs in the dataset.
+The variables explain:
+
+*patient_id* - the ID of the patient (n-th confirmed patient)
+
+*sex* - the sex of the patient
+
+*age* - the age group of the patient
+
+*country* - the country of the patient
+
+*province* - the province of the patient
+
+*city* - the city of the patient
+
+*infection_case* - the case of infection
+
+*infected_by* - the ID of who has infected the patient
+
+*contact_number* - the number of contacts with people
+
+*symptom_onset_date* - the date of symptom onset
+
+*confirmed_date* - the date of confirmation
+
+*released_date* - the date of discharge
+
+*deceased_date* - the date of decease
+
+*state* - isolated / released / deceased
+
+```{r}
+Patient <- read_csv("PatientInfo.csv")
+```
+
+# Analysis
+## Number of new confirmed people
+
+According to the Figure \@ref(fig:p1), at the beginning we look at the number of new cases over time. The first case was detected on January 20. The jump will occur around February 20, where a large number of cases are detected each day. Mostly, it was detected on March 1 - almost 1,000. After this time, the number of detected cases decreased. In April no more than 30 new cases were recorded per day (usually no more than 10). Another jump occurred at the turn of May and June (the highest value in this period was observed on May 27 and amounted to 76 cases in one day), which resulted in the restoration of some restrictions.
+
+```{r}
+Patient2 <- Patient %>%
+  group_by(confirmed_date) %>%
+  summarise(count = n())
+```
+
+```{r p1,fig.cap = "Number of new confirmed people"}
+p1 <- ggplot(Patient2, aes(confirmed_date, count)) +
+  geom_line(size = 1.6, alpha = 0.8, color = 4) +
+  geom_smooth(color = "red", size = 2) +
+  scale_y_continuous(limits = c(0,150)) +
+  xlab("Date") +
+  ylab("Number") +
+  ggtitle("Number of new confirmed people") + 
+  theme(plot.background = element_rect(fill = "#f5e6e1")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank())
+ggplotly(p1)
+```
+
+## Number of confirmed people
+
+According to the Figure \@ref(fig:p2), We can find that the vast majority of infected people come from these three places including Seoul, Gyeongsangbuk-do, Gyeonggi-do, and the number of people in other places is much smaller than them. Even Incheon, the fourth most infected place, is only a quarter of Gyeonggi-do.
+
+```{r}
+Patient3 <- Patient %>% 
+  group_by(province) %>% 
+  summarise(count = n())
+```
+
+
+```{r p2,fig.cap = "Region where infection was detected"}
+p2 <- ggplot(Patient3, aes(reorder(province, count),count))+
+  geom_bar(stat = "identity", colour = "black", fill = "lightblue", alpha = 0.9) +
+  geom_text(aes(label=count), vjust=0.5, color="Black", size=3.5) +
+  coord_flip() +
+  xlab("Region") +
+  ylab("Number") +
+  ggtitle("Region where infection was detected") + 
+  theme(plot.background = element_rect(fill = "#f5e6e1")) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  theme(axis.text.x = element_blank()) +
+  theme(axis.ticks.x = element_blank())
+ggplotly(p2)
+```
+
+# Conclusion
+
+By the end of February, the number of new infected in Korea was growing rapidly, but since then the number of new cases has been decreasing day by day.
+
+The infections are most often found in the Seoul.
+
+
+
+
+# Packages
+
+Thanks for the providers of these packages used as follows:
+
+
+- ggplot2 [@ggplot2]
+
+- tidyverse [@tidyverse]
+
+- plotly [@plotly] 
+
+
+
+
+
+
+
+
+

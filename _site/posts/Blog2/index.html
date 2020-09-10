@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>5523 Blog: covid-19 in South Korea</title>
+
+<meta property="description" itemprop="description" content="This blog will introduce the COVID-19 situation in South Korea"/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2020-09-11"/>
+<meta property="article:created" itemprop="dateCreated" content="2020-09-11"/>
+<meta name="article:author" content="Sen Wang"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="5523 Blog: covid-19 in South Korea"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="This blog will introduce the COVID-19 situation in South Korea"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="5523 Blog"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="5523 Blog: covid-19 in South Korea"/>
+<meta property="twitter:description" content="This blog will introduce the COVID-19 situation in South Korea"/>
+
+<!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Ggplot2: Elegant graphics for data analysis;citation_publication_date=2016;citation_publisher=Springer-Verlag New York;citation_author=Hadley Wickham"/>
+  <meta name="citation_reference" content="citation_title=Welcome to the &lt;span class=&quot;nocase&quot;&gt;tidyverse&lt;/span&gt;;citation_publication_date=2019;citation_volume=4;citation_doi=10.21105/joss.01686;citation_author=Hadley Wickham;citation_author=Mara Averick;citation_author=Jennifer Bryan;citation_author=Winston Chang;citation_author=Lucy D鈥橝gostino McGowan;citation_author=Romain Fran莽ois;citation_author=Garrett Grolemund;citation_author=Alex Hayes;citation_author=Lionel Henry;citation_author=Jim Hester;citation_author=Max Kuhn;citation_author=Thomas Lin Pedersen;citation_author=Evan Miller;citation_author=Stephan Milton Bache;citation_author=Kirill M眉ller;citation_author=Jeroen Ooms;citation_author=David Robinson;citation_author=Dana Paige Seidel;citation_author=Vitalie Spinu;citation_author=Kohske Takahashi;citation_author=Davis Vaughan;citation_author=Claus Wilke;citation_author=Kara Woo;citation_author=Hiroaki Yutani"/>
+  <meta name="citation_reference" content="citation_title=Interactive web-based data visualization with r, plotly, and shiny;citation_publication_date=2020;citation_publisher=Chapman; Hall/CRC;citation_author=Carson Sievert"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","bibliography","biblio-style"]}},"value":[{"type":"character","attributes":{},"value":["covid-19 in South Korea"]},{"type":"character","attributes":{},"value":["This blog will introduce the COVID-19 situation in South Korea"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Sen Wang"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["09-11-2020"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["COVID-19"]},{"type":"character","attributes":{},"value":["references.bib"]},{"type":"character","attributes":{},"value":["authoryear-comp"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["covid-19-in-South-Korea_files/bowser-1.9.3/bowser.min.js","covid-19-in-South-Korea_files/crosstalk-1.1.0.1/css/crosstalk.css","covid-19-in-South-Korea_files/crosstalk-1.1.0.1/js/crosstalk.js","covid-19-in-South-Korea_files/crosstalk-1.1.0.1/js/crosstalk.js.map","covid-19-in-South-Korea_files/crosstalk-1.1.0.1/js/crosstalk.min.js","covid-19-in-South-Korea_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","covid-19-in-South-Korea_files/distill-2.2.21/template.v2.js","covid-19-in-South-Korea_files/figure-html5/unnamed-chunk-3-1.png","covid-19-in-South-Korea_files/htmlwidgets-1.5.1/htmlwidgets.js","covid-19-in-South-Korea_files/jquery-1.11.3/jquery-AUTHORS.txt","covid-19-in-South-Korea_files/jquery-1.11.3/jquery.js","covid-19-in-South-Korea_files/jquery-1.11.3/jquery.min.js","covid-19-in-South-Korea_files/jquery-1.11.3/jquery.min.map","covid-19-in-South-Korea_files/plotly-binding-4.9.2.1/plotly.js","covid-19-in-South-Korea_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css","covid-19-in-South-Korea_files/plotly-main-1.52.2/plotly-latest.min.js","covid-19-in-South-Korea_files/typedarray-0.1/typedarray.min.js","covid-19-in-South-Korea_files/webcomponents-2.0.0/webcomponents.js","PatientInfo.csv","references.bib"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #455a64;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative;}
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for table of contents */
+
+.d-toc {
+  color: rgba(0,0,0,0.8);
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.d-toc-header {
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.d-toc a {
+  border-bottom: none;
+}
+
+.d-toc ul {
+  padding-left: 0;
+}
+
+.d-toc li>ul {
+  padding-top: 0.8em;
+  padding-left: 16px;
+  margin-bottom: 0.6em;
+}
+
+.d-toc ul,
+.d-toc li {
+  list-style-type: none;
+}
+
+.d-toc li {
+  margin-bottom: 0.9em;
+}
+
+.d-toc-separator {
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+.d-article-with-toc {
+  border-top: none;
+  padding-top: 0;
+}
+
+
+
+/* Tweak code blocks (note that this CSS is repeated above in an injection
+   into the d-code shadow dom) */
+
+d-code {
+  overflow-x: auto !important;
+}
+
+pre.d-code code.d-code {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+pre.text-output {
+
+  font-size: 12px;
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media(min-width: 768px) {
+
+d-code {
+  overflow-x: visible !important;
+}
+
+pre.d-code code.d-code  {
+    padding-left: 18px;
+    font-size: 14px;
+}
+pre.text-output {
+  font-size: 14px;
+}
+}
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // create d-bibliography
+  var bibliography = $('<d-bibliography></d-bibliography>');
+  $('#distill-bibliography').wrap(bibliography);
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace citations with <d-cite>
+  $('.citation').each(function(i, val) {
+    appendix = true;
+    var cites = $(this).attr('data-cites').split(" ");
+    var dt_cite = $('<d-cite></d-cite>');
+    dt_cite.attr('key', cites.join());
+    $(this).replaceWith(dt_cite);
+  });
+  // remove refs
+  $('#refs').remove();
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-toc a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // replace code blocks with d-code
+  $('pre>code').each(function(i, val) {
+    var code = $(this);
+    var pre = code.parent();
+    var clz = "";
+    var language = pre.attr('class');
+    if (language) {
+      // map unknown languages to "clike" (without this they just dissapear)
+      if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                               "javascript", "js", "julia", "lua", "markdown",
+                               "markup", "mathml", "python", "svg", "xml"]) == -1)
+        language = "clike";
+      language = ' language="' + language + '"';
+      var dt_code = $('<d-code block' + language + clz + '></d-code>');
+      dt_code.text(code.text());
+      pre.replaceWith(dt_code);
+    } else {
+      code.addClass('text-output').unwrap().changeElementType('pre');
+    }
+  });
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('d-code, pre.text-output, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // table of contents
+    if (have_authors) // adjust border if we are in authors
+      $('.d-toc').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+    $('d-code').each(function(i, val) {
+      var style = document.createElement('style');
+      style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                        '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+      if (this.shadowRoot)
+        this.shadowRoot.appendChild(style);
+    });
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-toc-header').remove();
+  $('.d-toc').remove();
+  $('.d-toc-separator').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+  <script src="../../site_libs/plotly-binding-4.9.2.1/plotly.js"></script>
+  <script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <link href="../../site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="../../site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+  <link href="../../site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="../../site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"covid-19 in South Korea","description":"This blog will introduce the COVID-19 situation in South Korea","authors":[{"author":"Sen Wang","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#"}],"publishedDate":"2020-09-11T00:00:00.000+10:00","citationText":"Wang, 2020"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">5523 Blog</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>covid-19 in South Korea</h1>
+<p><p>This blog will introduce the COVID-19 situation in South Korea</p></p>
+</div>
+
+<div class="d-byline">
+  Sen Wang true 
+  
+<br/>09-11-2020
+</div>
+
+<div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>Coronavirus is an infectious coronavirus from Wuhan, China. With cities quarantined and hospitals overwhelmed, the new virus has caused panic in many countries. This blog will analyze the Coronavirus situation in Korea</p>
+<h1 id="data-description">Data description</h1>
+<p>This dataset comes from the report materials of KCDC and local governments.</p>
+<p>There are 14 vars and 5165 obs in the dataset. The variables explain:</p>
+<p><em>patient_id</em> - the ID of the patient (n-th confirmed patient)</p>
+<p><em>sex</em> - the sex of the patient</p>
+<p><em>age</em> - the age group of the patient</p>
+<p><em>country</em> - the country of the patient</p>
+<p><em>province</em> - the province of the patient</p>
+<p><em>city</em> - the city of the patient</p>
+<p><em>infection_case</em> - the case of infection</p>
+<p><em>infected_by</em> - the ID of who has infected the patient</p>
+<p><em>contact_number</em> - the number of contacts with people</p>
+<p><em>symptom_onset_date</em> - the date of symptom onset</p>
+<p><em>confirmed_date</em> - the date of confirmation</p>
+<p><em>released_date</em> - the date of discharge</p>
+<p><em>deceased_date</em> - the date of decease</p>
+<p><em>state</em> - isolated / released / deceased</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h1 id="analysis">Analysis</h1>
+<h2 id="number-of-new-confirmed-people">Number of new confirmed people</h2>
+<p>According to the Figure <a href="#fig:p1">1</a>, at the beginning we look at the number of new cases over time. The first case was detected on January 20. The jump will occur around February 20, where a large number of cases are detected each day. Mostly, it was detected on March 1 - almost 1,000. After this time, the number of detected cases decreased. In April no more than 30 new cases were recorded per day (usually no more than 10). Another jump occurred at the turn of May and June (the highest value in this period was observed on May 27 and amounted to 76 cases in one day), which resulted in the restoration of some restrictions.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:p1"></span>
+<div id="htmlwidget-6f87edbbdc8cd1bb39aa" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6f87edbbdc8cd1bb39aa">{"x":{"data":[{"x":[18281,18284,18287,18288,18291,18292,18293,18294,18295,18297,18298,18299,18301,18302,18308,18310,18311,18312,18313,18314,18315,18316,18317,18318,18319,18320,18321,18322,18323,18324,18325,18326,18327,18328,18329,18330,18331,18332,18333,18334,18335,18336,18337,18338,18339,18340,18341,18342,18343,18344,18345,18346,18347,18348,18349,18350,18351,18352,18353,18354,18355,18356,18357,18358,18359,18360,18361,18362,18363,18364,18365,18366,18367,18368,18369,18370,18371,18372,18373,18374,18375,18376,18377,18378,18379,18380,18381,18382,18383,18384,18385,18387,18388,18389,18390,18391,18392,18393,18394,18395,18396,18397,18398,18399,18400,18401,18402,18403,18404,18405,18406,18407,18408,18409,18410,18411,18412,18413,18414,18415,18416,18417,18418,18419,18420,18421,18422,18423,18424,18425,18426,18427,18428,18429,18430,18431,18432,18433,18434,18435,18436,18437,18438,18439,18440,18441,18442,18443,null],"y":[1,1,1,1,4,3,1,3,1,5,2,1,3,1,2,9,28,42,37,72,75,57,93,122,112,137,103,133,68,113,116,145,99,57,54,69,95,51,35,35,34,37,53,44,57,50,73,38,31,23,57,47,49,49,67,55,46,78,48,59,48,43,27,22,34,24,23,16,12,18,17,20,14,11,13,5,7,6,10,7,5,8,9,5,10,6,1,4,4,9,3,2,3,8,22,30,27,28,21,29,24,10,10,7,14,27,15,11,22,20,17,14,37,77,57,37,23,32,46,44,33,39,53,52,28,38,50,38,44,49,38,25,24,40,50,42,52,41,20,15,38,25,33,40,48,38,25,7,3],"text":["confirmed_date: 2020-01-20<br />count:   1","confirmed_date: 2020-01-23<br />count:   1","confirmed_date: 2020-01-26<br />count:   1","confirmed_date: 2020-01-27<br />count:   1","confirmed_date: 2020-01-30<br />count:   4","confirmed_date: 2020-01-31<br />count:   3","confirmed_date: 2020-02-01<br />count:   1","confirmed_date: 2020-02-02<br />count:   3","confirmed_date: 2020-02-03<br />count:   1","confirmed_date: 2020-02-05<br />count:   5","confirmed_date: 2020-02-06<br />count:   2","confirmed_date: 2020-02-07<br />count:   1","confirmed_date: 2020-02-09<br />count:   3","confirmed_date: 2020-02-10<br />count:   1","confirmed_date: 2020-02-16<br />count:   2","confirmed_date: 2020-02-18<br />count:   9","confirmed_date: 2020-02-19<br />count:  28","confirmed_date: 2020-02-20<br />count:  42","confirmed_date: 2020-02-21<br />count:  37","confirmed_date: 2020-02-22<br />count:  72","confirmed_date: 2020-02-23<br />count:  75","confirmed_date: 2020-02-24<br />count:  57","confirmed_date: 2020-02-25<br />count:  93","confirmed_date: 2020-02-26<br />count: 122","confirmed_date: 2020-02-27<br />count: 112","confirmed_date: 2020-02-28<br />count: 137","confirmed_date: 2020-02-29<br />count: 103","confirmed_date: 2020-03-01<br />count: 133","confirmed_date: 2020-03-02<br />count:  68","confirmed_date: 2020-03-03<br />count: 113","confirmed_date: 2020-03-04<br />count: 116","confirmed_date: 2020-03-05<br />count: 145","confirmed_date: 2020-03-06<br />count:  99","confirmed_date: 2020-03-07<br />count:  57","confirmed_date: 2020-03-08<br />count:  54","confirmed_date: 2020-03-09<br />count:  69","confirmed_date: 2020-03-10<br />count:  95","confirmed_date: 2020-03-11<br />count:  51","confirmed_date: 2020-03-12<br />count:  35","confirmed_date: 2020-03-13<br />count:  35","confirmed_date: 2020-03-14<br />count:  34","confirmed_date: 2020-03-15<br />count:  37","confirmed_date: 2020-03-16<br />count:  53","confirmed_date: 2020-03-17<br />count:  44","confirmed_date: 2020-03-18<br />count:  57","confirmed_date: 2020-03-19<br />count:  50","confirmed_date: 2020-03-20<br />count:  73","confirmed_date: 2020-03-21<br />count:  38","confirmed_date: 2020-03-22<br />count:  31","confirmed_date: 2020-03-23<br />count:  23","confirmed_date: 2020-03-24<br />count:  57","confirmed_date: 2020-03-25<br />count:  47","confirmed_date: 2020-03-26<br />count:  49","confirmed_date: 2020-03-27<br />count:  49","confirmed_date: 2020-03-28<br />count:  67","confirmed_date: 2020-03-29<br />count:  55","confirmed_date: 2020-03-30<br />count:  46","confirmed_date: 2020-03-31<br />count:  78","confirmed_date: 2020-04-01<br />count:  48","confirmed_date: 2020-04-02<br />count:  59","confirmed_date: 2020-04-03<br />count:  48","confirmed_date: 2020-04-04<br />count:  43","confirmed_date: 2020-04-05<br />count:  27","confirmed_date: 2020-04-06<br />count:  22","confirmed_date: 2020-04-07<br />count:  34","confirmed_date: 2020-04-08<br />count:  24","confirmed_date: 2020-04-09<br />count:  23","confirmed_date: 2020-04-10<br />count:  16","confirmed_date: 2020-04-11<br />count:  12","confirmed_date: 2020-04-12<br />count:  18","confirmed_date: 2020-04-13<br />count:  17","confirmed_date: 2020-04-14<br />count:  20","confirmed_date: 2020-04-15<br />count:  14","confirmed_date: 2020-04-16<br />count:  11","confirmed_date: 2020-04-17<br />count:  13","confirmed_date: 2020-04-18<br />count:   5","confirmed_date: 2020-04-19<br />count:   7","confirmed_date: 2020-04-20<br />count:   6","confirmed_date: 2020-04-21<br />count:  10","confirmed_date: 2020-04-22<br />count:   7","confirmed_date: 2020-04-23<br />count:   5","confirmed_date: 2020-04-24<br />count:   8","confirmed_date: 2020-04-25<br />count:   9","confirmed_date: 2020-04-26<br />count:   5","confirmed_date: 2020-04-27<br />count:  10","confirmed_date: 2020-04-28<br />count:   6","confirmed_date: 2020-04-29<br />count:   1","confirmed_date: 2020-04-30<br />count:   4","confirmed_date: 2020-05-01<br />count:   4","confirmed_date: 2020-05-02<br />count:   9","confirmed_date: 2020-05-03<br />count:   3","confirmed_date: 2020-05-05<br />count:   2","confirmed_date: 2020-05-06<br />count:   3","confirmed_date: 2020-05-07<br />count:   8","confirmed_date: 2020-05-08<br />count:  22","confirmed_date: 2020-05-09<br />count:  30","confirmed_date: 2020-05-10<br />count:  27","confirmed_date: 2020-05-11<br />count:  28","confirmed_date: 2020-05-12<br />count:  21","confirmed_date: 2020-05-13<br />count:  29","confirmed_date: 2020-05-14<br />count:  24","confirmed_date: 2020-05-15<br />count:  10","confirmed_date: 2020-05-16<br />count:  10","confirmed_date: 2020-05-17<br />count:   7","confirmed_date: 2020-05-18<br />count:  14","confirmed_date: 2020-05-19<br />count:  27","confirmed_date: 2020-05-20<br />count:  15","confirmed_date: 2020-05-21<br />count:  11","confirmed_date: 2020-05-22<br />count:  22","confirmed_date: 2020-05-23<br />count:  20","confirmed_date: 2020-05-24<br />count:  17","confirmed_date: 2020-05-25<br />count:  14","confirmed_date: 2020-05-26<br />count:  37","confirmed_date: 2020-05-27<br />count:  77","confirmed_date: 2020-05-28<br />count:  57","confirmed_date: 2020-05-29<br />count:  37","confirmed_date: 2020-05-30<br />count:  23","confirmed_date: 2020-05-31<br />count:  32","confirmed_date: 2020-06-01<br />count:  46","confirmed_date: 2020-06-02<br />count:  44","confirmed_date: 2020-06-03<br />count:  33","confirmed_date: 2020-06-04<br />count:  39","confirmed_date: 2020-06-05<br />count:  53","confirmed_date: 2020-06-06<br />count:  52","confirmed_date: 2020-06-07<br />count:  28","confirmed_date: 2020-06-08<br />count:  38","confirmed_date: 2020-06-09<br />count:  50","confirmed_date: 2020-06-10<br />count:  38","confirmed_date: 2020-06-11<br />count:  44","confirmed_date: 2020-06-12<br />count:  49","confirmed_date: 2020-06-13<br />count:  38","confirmed_date: 2020-06-14<br />count:  25","confirmed_date: 2020-06-15<br />count:  24","confirmed_date: 2020-06-16<br />count:  40","confirmed_date: 2020-06-17<br />count:  50","confirmed_date: 2020-06-18<br />count:  42","confirmed_date: 2020-06-19<br />count:  52","confirmed_date: 2020-06-20<br />count:  41","confirmed_date: 2020-06-21<br />count:  20","confirmed_date: 2020-06-22<br />count:  15","confirmed_date: 2020-06-23<br />count:  38","confirmed_date: 2020-06-24<br />count:  25","confirmed_date: 2020-06-25<br />count:  33","confirmed_date: 2020-06-26<br />count:  40","confirmed_date: 2020-06-27<br />count:  48","confirmed_date: 2020-06-28<br />count:  38","confirmed_date: 2020-06-29<br />count:  25","confirmed_date: 2020-06-30<br />count:   7","confirmed_date: NA<br />count:   3"],"type":"scatter","mode":"lines","line":{"width":6.04724409448819,"color":"rgba(34,151,230,0.8)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18281,18283.0506329114,18285.1012658228,18287.1518987342,18289.2025316456,18291.253164557,18293.3037974684,18295.3544303797,18297.4050632911,18299.4556962025,18301.5063291139,18303.5569620253,18305.6075949367,18307.6582278481,18309.7088607595,18311.7594936709,18313.8101265823,18315.8607594937,18317.9113924051,18319.9620253165,18322.0126582278,18324.0632911392,18326.1139240506,18328.164556962,18330.2151898734,18332.2658227848,18334.3164556962,18336.3670886076,18338.417721519,18340.4683544304,18342.5189873418,18344.5696202532,18346.6202531646,18348.6708860759,18350.7215189873,18352.7721518987,18354.8227848101,18356.8734177215,18358.9240506329,18360.9746835443,18363.0253164557,18365.0759493671,18367.1265822785,18369.1772151899,18371.2278481013,18373.2784810127,18375.3291139241,18377.3797468354,18379.4303797468,18381.4810126582,18383.5316455696,18385.582278481,18387.6329113924,18389.6835443038,18391.7341772152,18393.7848101266,18395.835443038,18397.8860759494,18399.9367088608,18401.9873417722,18404.0379746835,18406.0886075949,18408.1392405063,18410.1898734177,18412.2405063291,18414.2911392405,18416.3417721519,18418.3924050633,18420.4430379747,18422.4936708861,18424.5443037975,18426.5949367089,18428.6455696203,18430.6962025316,18432.746835443,18434.7974683544,18436.8481012658,18438.8987341772,18440.9493670886,18443],"y":[null,null,null,null,0.643088212833323,6.87056499835059,12.7803531717914,18.3723119552592,23.6463005708574,28.6021782406896,33.2398041868591,37.5590376314694,41.559737796624,45.2417639044263,48.6049751769798,51.6492308363879,54.3693002357387,56.7244407956544,58.7245724634363,60.3929781910068,61.7529409302903,62.8277436332043,63.640669251674,64.2150007376215,64.5740210429693,64.5749692316812,63.6667986540096,61.9596452530968,59.6312426821818,56.8593245945039,53.8216246433022,50.6958764818161,47.6598137632846,44.8911701409471,42.4894943137044,39.7140519176983,36.4807045096252,32.9708814611987,29.3660121441328,25.8475259301413,22.596852190938,19.7954202982368,17.6246596237515,16.1480300977394,14.9366690389471,13.9255819671116,13.1090544522838,12.4813720645145,12.0368203738545,11.7696849503547,11.6742513640659,11.7448051850388,11.9756319833244,12.4784812363528,13.4165773985941,14.6879980620162,16.1846895692765,17.7985982630323,19.4216704859411,20.9458525806602,22.2630908898492,23.2658277297813,24.149714357702,25.1251007708692,26.1727018901943,27.2732326365889,28.4074079309644,29.5559426942325,30.6995518473045,31.8189503110921,32.8948530065066,33.9166974763819,34.8992523823795,35.8515285720163,36.7820537538727,37.6993556365289,38.6119619285655,39.5284003385626,40.4571985751008,41.4068843467604],"text":["confirmed_date: 18281.00<br />count:         NA","confirmed_date: 18283.05<br />count:         NA","confirmed_date: 18285.10<br />count:         NA","confirmed_date: 18287.15<br />count:         NA","confirmed_date: 18289.20<br />count:  0.6430882","confirmed_date: 18291.25<br />count:  6.8705650","confirmed_date: 18293.30<br />count: 12.7803532","confirmed_date: 18295.35<br />count: 18.3723120","confirmed_date: 18297.41<br />count: 23.6463006","confirmed_date: 18299.46<br />count: 28.6021782","confirmed_date: 18301.51<br />count: 33.2398042","confirmed_date: 18303.56<br />count: 37.5590376","confirmed_date: 18305.61<br />count: 41.5597378","confirmed_date: 18307.66<br />count: 45.2417639","confirmed_date: 18309.71<br />count: 48.6049752","confirmed_date: 18311.76<br />count: 51.6492308","confirmed_date: 18313.81<br />count: 54.3693002","confirmed_date: 18315.86<br />count: 56.7244408","confirmed_date: 18317.91<br />count: 58.7245725","confirmed_date: 18319.96<br />count: 60.3929782","confirmed_date: 18322.01<br />count: 61.7529409","confirmed_date: 18324.06<br />count: 62.8277436","confirmed_date: 18326.11<br />count: 63.6406693","confirmed_date: 18328.16<br />count: 64.2150007","confirmed_date: 18330.22<br />count: 64.5740210","confirmed_date: 18332.27<br />count: 64.5749692","confirmed_date: 18334.32<br />count: 63.6667987","confirmed_date: 18336.37<br />count: 61.9596453","confirmed_date: 18338.42<br />count: 59.6312427","confirmed_date: 18340.47<br />count: 56.8593246","confirmed_date: 18342.52<br />count: 53.8216246","confirmed_date: 18344.57<br />count: 50.6958765","confirmed_date: 18346.62<br />count: 47.6598138","confirmed_date: 18348.67<br />count: 44.8911701","confirmed_date: 18350.72<br />count: 42.4894943","confirmed_date: 18352.77<br />count: 39.7140519","confirmed_date: 18354.82<br />count: 36.4807045","confirmed_date: 18356.87<br />count: 32.9708815","confirmed_date: 18358.92<br />count: 29.3660121","confirmed_date: 18360.97<br />count: 25.8475259","confirmed_date: 18363.03<br />count: 22.5968522","confirmed_date: 18365.08<br />count: 19.7954203","confirmed_date: 18367.13<br />count: 17.6246596","confirmed_date: 18369.18<br />count: 16.1480301","confirmed_date: 18371.23<br />count: 14.9366690","confirmed_date: 18373.28<br />count: 13.9255820","confirmed_date: 18375.33<br />count: 13.1090545","confirmed_date: 18377.38<br />count: 12.4813721","confirmed_date: 18379.43<br />count: 12.0368204","confirmed_date: 18381.48<br />count: 11.7696850","confirmed_date: 18383.53<br />count: 11.6742514","confirmed_date: 18385.58<br />count: 11.7448052","confirmed_date: 18387.63<br />count: 11.9756320","confirmed_date: 18389.68<br />count: 12.4784812","confirmed_date: 18391.73<br />count: 13.4165774","confirmed_date: 18393.78<br />count: 14.6879981","confirmed_date: 18395.84<br />count: 16.1846896","confirmed_date: 18397.89<br />count: 17.7985983","confirmed_date: 18399.94<br />count: 19.4216705","confirmed_date: 18401.99<br />count: 20.9458526","confirmed_date: 18404.04<br />count: 22.2630909","confirmed_date: 18406.09<br />count: 23.2658277","confirmed_date: 18408.14<br />count: 24.1497144","confirmed_date: 18410.19<br />count: 25.1251008","confirmed_date: 18412.24<br />count: 26.1727019","confirmed_date: 18414.29<br />count: 27.2732326","confirmed_date: 18416.34<br />count: 28.4074079","confirmed_date: 18418.39<br />count: 29.5559427","confirmed_date: 18420.44<br />count: 30.6995518","confirmed_date: 18422.49<br />count: 31.8189503","confirmed_date: 18424.54<br />count: 32.8948530","confirmed_date: 18426.59<br />count: 33.9166975","confirmed_date: 18428.65<br />count: 34.8992524","confirmed_date: 18430.70<br />count: 35.8515286","confirmed_date: 18432.75<br />count: 36.7820538","confirmed_date: 18434.80<br />count: 37.6993556","confirmed_date: 18436.85<br />count: 38.6119619","confirmed_date: 18438.90<br />count: 39.5284003","confirmed_date: 18440.95<br />count: 40.4571986","confirmed_date: 18443.00<br />count: 41.4068843"],"type":"scatter","mode":"lines","name":"fitted values","line":{"width":7.55905511811024,"color":"rgba(255,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[18281,18283.0506329114,18285.1012658228,18287.1518987342,18289.2025316456,18291.253164557,18293.3037974684,18295.3544303797,18297.4050632911,18299.4556962025,18301.5063291139,18303.5569620253,18305.6075949367,18307.6582278481,18309.7088607595,18311.7594936709,18313.8101265823,18315.8607594937,18317.9113924051,18319.9620253165,18322.0126582278,18324.0632911392,18326.1139240506,18328.164556962,18330.2151898734,18332.2658227848,18334.3164556962,18336.3670886076,18338.417721519,18340.4683544304,18342.5189873418,18344.5696202532,18346.6202531646,18348.6708860759,18350.7215189873,18352.7721518987,18354.8227848101,18356.8734177215,18358.9240506329,18360.9746835443,18363.0253164557,18365.0759493671,18367.1265822785,18369.1772151899,18371.2278481013,18373.2784810127,18375.3291139241,18377.3797468354,18379.4303797468,18381.4810126582,18383.5316455696,18385.582278481,18387.6329113924,18389.6835443038,18391.7341772152,18393.7848101266,18395.835443038,18397.8860759494,18399.9367088608,18401.9873417722,18404.0379746835,18406.0886075949,18408.1392405063,18410.1898734177,18412.2405063291,18414.2911392405,18416.3417721519,18418.3924050633,18420.4430379747,18422.4936708861,18424.5443037975,18426.5949367089,18428.6455696203,18430.6962025316,18432.746835443,18434.7974683544,18436.8481012658,18438.8987341772,18440.9493670886,18443,18443,18443,18440.9493670886,18438.8987341772,18436.8481012658,18434.7974683544,18432.746835443,18430.6962025316,18428.6455696203,18426.5949367089,18424.5443037975,18422.4936708861,18420.4430379747,18418.3924050633,18416.3417721519,18414.2911392405,18412.2405063291,18410.1898734177,18408.1392405063,18406.0886075949,18404.0379746835,18401.9873417722,18399.9367088608,18397.8860759494,18395.835443038,18393.7848101266,18391.7341772152,18389.6835443038,18387.6329113924,18385.582278481,18383.5316455696,18381.4810126582,18379.4303797468,18377.3797468354,18375.3291139241,18373.2784810127,18371.2278481013,18369.1772151899,18367.1265822785,18365.0759493671,18363.0253164557,18360.9746835443,18358.9240506329,18356.8734177215,18354.8227848101,18352.7721518987,18350.7215189873,18348.6708860759,18346.6202531646,18344.5696202532,18342.5189873418,18340.4683544304,18338.417721519,18336.3670886076,18334.3164556962,18332.2658227848,18330.2151898734,18328.164556962,18326.1139240506,18324.0632911392,18322.0126582278,18319.9620253165,18317.9113924051,18315.8607594937,18313.8101265823,18311.7594936709,18309.7088607595,18307.6582278481,18305.6075949367,18303.5569620253,18301.5063291139,18299.4556962025,18297.4050632911,18295.3544303797,18293.3037974684,18291.253164557,18289.2025316456,18287.1518987342,18285.1012658228,18283.0506329114,18281,18281],"y":[null,null,null,null,null,null,2.54653043691717,8.8998267403947,14.8539147982113,20.4065206083709,25.5563045966859,30.3033693965635,34.6497493830701,38.5997470325273,42.1599807959661,45.3390752405772,48.1425149549014,50.5452927839444,52.5672067505715,54.2380136072664,55.5859860526023,56.6384681581522,57.422319000021,57.964209023734,58.2907559670431,58.2710963202519,57.3789292587427,55.7003391692094,53.3842419351276,50.587195450676,47.4797024390113,44.2487793814706,41.0961812433939,38.2333939943587,35.7977640860278,33.0673575494159,29.9153000274076,26.4717254688053,22.8795219967719,19.3057000540128,15.9460734243778,13.0209906566324,10.7646852060612,9.29233198022147,8.17310213794729,7.29132800727721,6.58884269759042,6.01793814772697,5.55186672135762,5.19090059723885,4.96054293773224,4.9030040651272,5.06627428277424,5.59020243296401,6.60057946355466,7.96577937161337,9.55335980581716,11.2405168810203,12.9169548862317,14.4846663750487,15.8542411170106,16.9384865699402,17.9228120469669,18.9955993340789,20.1299922879471,21.2974968122549,22.4678877084893,23.6092671982647,24.6883858622342,25.6712951106136,26.5242860711763,27.2234032949214,27.7730129862081,28.177373174864,28.4448391837861,28.5871652907734,28.6181802571455,28.5526708299846,28.4056127346412,28.1917240849501,28.1917240849501,54.6220446085706,52.5087844155604,50.5041298471407,48.6057435999854,46.8115459822845,45.1192683239592,43.5256839691687,42.025491778551,40.6099916578424,39.2654199418369,37.9666055115706,36.7107178323748,35.5026181902002,34.3469281534395,33.2489684609229,32.2154114924415,31.2546022076594,30.3766166684371,29.5931688896224,28.6719406626877,27.4070387862717,25.9263860856505,24.3566796450442,22.8160193327358,21.410216752419,20.2325753336335,19.3667600397415,18.8849896838746,18.5866063049505,18.3879597903995,18.3484693034706,18.5217740263515,18.9448059813021,19.6292662069772,20.559835926946,21.7002359399469,23.0037282152573,24.4846340414419,26.5698499398413,29.2476309574983,32.3893518062698,35.8525022914937,39.4700374535921,43.0461089918427,46.3607462859808,49.1812245413811,51.5489462875355,54.2234462831753,57.1429735821616,60.1635468475932,63.1314537383317,65.878243429236,68.2189513369841,69.9546680492766,70.8788421431104,70.8572861188956,70.4657924515091,69.8590195033269,69.0170191082564,67.9198958079782,66.5479427747471,64.8819381763011,62.9035888073645,60.5960855165761,57.9593864321985,55.0499695579934,51.8837807763253,48.4697262101779,44.8147058663753,40.9233037770322,36.7978358730083,32.4386863435036,27.8447971701237,23.0141759066656,17.9443310088532,12.6325968282671,7.07634910255206,1.27313118905793,null,null,null],"text":["confirmed_date: 18281.00<br />count:         NA","confirmed_date: 18283.05<br />count:         NA","confirmed_date: 18285.10<br />count:         NA","confirmed_date: 18287.15<br />count:         NA","confirmed_date: 18289.20<br />count:  0.6430882","confirmed_date: 18291.25<br />count:  6.8705650","confirmed_date: 18293.30<br />count: 12.7803532","confirmed_date: 18295.35<br />count: 18.3723120","confirmed_date: 18297.41<br />count: 23.6463006","confirmed_date: 18299.46<br />count: 28.6021782","confirmed_date: 18301.51<br />count: 33.2398042","confirmed_date: 18303.56<br />count: 37.5590376","confirmed_date: 18305.61<br />count: 41.5597378","confirmed_date: 18307.66<br />count: 45.2417639","confirmed_date: 18309.71<br />count: 48.6049752","confirmed_date: 18311.76<br />count: 51.6492308","confirmed_date: 18313.81<br />count: 54.3693002","confirmed_date: 18315.86<br />count: 56.7244408","confirmed_date: 18317.91<br />count: 58.7245725","confirmed_date: 18319.96<br />count: 60.3929782","confirmed_date: 18322.01<br />count: 61.7529409","confirmed_date: 18324.06<br />count: 62.8277436","confirmed_date: 18326.11<br />count: 63.6406693","confirmed_date: 18328.16<br />count: 64.2150007","confirmed_date: 18330.22<br />count: 64.5740210","confirmed_date: 18332.27<br />count: 64.5749692","confirmed_date: 18334.32<br />count: 63.6667987","confirmed_date: 18336.37<br />count: 61.9596453","confirmed_date: 18338.42<br />count: 59.6312427","confirmed_date: 18340.47<br />count: 56.8593246","confirmed_date: 18342.52<br />count: 53.8216246","confirmed_date: 18344.57<br />count: 50.6958765","confirmed_date: 18346.62<br />count: 47.6598138","confirmed_date: 18348.67<br />count: 44.8911701","confirmed_date: 18350.72<br />count: 42.4894943","confirmed_date: 18352.77<br />count: 39.7140519","confirmed_date: 18354.82<br />count: 36.4807045","confirmed_date: 18356.87<br />count: 32.9708815","confirmed_date: 18358.92<br />count: 29.3660121","confirmed_date: 18360.97<br />count: 25.8475259","confirmed_date: 18363.03<br />count: 22.5968522","confirmed_date: 18365.08<br />count: 19.7954203","confirmed_date: 18367.13<br />count: 17.6246596","confirmed_date: 18369.18<br />count: 16.1480301","confirmed_date: 18371.23<br />count: 14.9366690","confirmed_date: 18373.28<br />count: 13.9255820","confirmed_date: 18375.33<br />count: 13.1090545","confirmed_date: 18377.38<br />count: 12.4813721","confirmed_date: 18379.43<br />count: 12.0368204","confirmed_date: 18381.48<br />count: 11.7696850","confirmed_date: 18383.53<br />count: 11.6742514","confirmed_date: 18385.58<br />count: 11.7448052","confirmed_date: 18387.63<br />count: 11.9756320","confirmed_date: 18389.68<br />count: 12.4784812","confirmed_date: 18391.73<br />count: 13.4165774","confirmed_date: 18393.78<br />count: 14.6879981","confirmed_date: 18395.84<br />count: 16.1846896","confirmed_date: 18397.89<br />count: 17.7985983","confirmed_date: 18399.94<br />count: 19.4216705","confirmed_date: 18401.99<br />count: 20.9458526","confirmed_date: 18404.04<br />count: 22.2630909","confirmed_date: 18406.09<br />count: 23.2658277","confirmed_date: 18408.14<br />count: 24.1497144","confirmed_date: 18410.19<br />count: 25.1251008","confirmed_date: 18412.24<br />count: 26.1727019","confirmed_date: 18414.29<br />count: 27.2732326","confirmed_date: 18416.34<br />count: 28.4074079","confirmed_date: 18418.39<br />count: 29.5559427","confirmed_date: 18420.44<br />count: 30.6995518","confirmed_date: 18422.49<br />count: 31.8189503","confirmed_date: 18424.54<br />count: 32.8948530","confirmed_date: 18426.59<br />count: 33.9166975","confirmed_date: 18428.65<br />count: 34.8992524","confirmed_date: 18430.70<br />count: 35.8515286","confirmed_date: 18432.75<br />count: 36.7820538","confirmed_date: 18434.80<br />count: 37.6993556","confirmed_date: 18436.85<br />count: 38.6119619","confirmed_date: 18438.90<br />count: 39.5284003","confirmed_date: 18440.95<br />count: 40.4571986","confirmed_date: 18443.00<br />count: 41.4068843","confirmed_date: 18443.00<br />count: 41.4068843","confirmed_date: 18443.00<br />count: 41.4068843","confirmed_date: 18440.95<br />count: 40.4571986","confirmed_date: 18438.90<br />count: 39.5284003","confirmed_date: 18436.85<br />count: 38.6119619","confirmed_date: 18434.80<br />count: 37.6993556","confirmed_date: 18432.75<br />count: 36.7820538","confirmed_date: 18430.70<br />count: 35.8515286","confirmed_date: 18428.65<br />count: 34.8992524","confirmed_date: 18426.59<br />count: 33.9166975","confirmed_date: 18424.54<br />count: 32.8948530","confirmed_date: 18422.49<br />count: 31.8189503","confirmed_date: 18420.44<br />count: 30.6995518","confirmed_date: 18418.39<br />count: 29.5559427","confirmed_date: 18416.34<br />count: 28.4074079","confirmed_date: 18414.29<br />count: 27.2732326","confirmed_date: 18412.24<br />count: 26.1727019","confirmed_date: 18410.19<br />count: 25.1251008","confirmed_date: 18408.14<br />count: 24.1497144","confirmed_date: 18406.09<br />count: 23.2658277","confirmed_date: 18404.04<br />count: 22.2630909","confirmed_date: 18401.99<br />count: 20.9458526","confirmed_date: 18399.94<br />count: 19.4216705","confirmed_date: 18397.89<br />count: 17.7985983","confirmed_date: 18395.84<br />count: 16.1846896","confirmed_date: 18393.78<br />count: 14.6879981","confirmed_date: 18391.73<br />count: 13.4165774","confirmed_date: 18389.68<br />count: 12.4784812","confirmed_date: 18387.63<br />count: 11.9756320","confirmed_date: 18385.58<br />count: 11.7448052","confirmed_date: 18383.53<br />count: 11.6742514","confirmed_date: 18381.48<br />count: 11.7696850","confirmed_date: 18379.43<br />count: 12.0368204","confirmed_date: 18377.38<br />count: 12.4813721","confirmed_date: 18375.33<br />count: 13.1090545","confirmed_date: 18373.28<br />count: 13.9255820","confirmed_date: 18371.23<br />count: 14.9366690","confirmed_date: 18369.18<br />count: 16.1480301","confirmed_date: 18367.13<br />count: 17.6246596","confirmed_date: 18365.08<br />count: 19.7954203","confirmed_date: 18363.03<br />count: 22.5968522","confirmed_date: 18360.97<br />count: 25.8475259","confirmed_date: 18358.92<br />count: 29.3660121","confirmed_date: 18356.87<br />count: 32.9708815","confirmed_date: 18354.82<br />count: 36.4807045","confirmed_date: 18352.77<br />count: 39.7140519","confirmed_date: 18350.72<br />count: 42.4894943","confirmed_date: 18348.67<br />count: 44.8911701","confirmed_date: 18346.62<br />count: 47.6598138","confirmed_date: 18344.57<br />count: 50.6958765","confirmed_date: 18342.52<br />count: 53.8216246","confirmed_date: 18340.47<br />count: 56.8593246","confirmed_date: 18338.42<br />count: 59.6312427","confirmed_date: 18336.37<br />count: 61.9596453","confirmed_date: 18334.32<br />count: 63.6667987","confirmed_date: 18332.27<br />count: 64.5749692","confirmed_date: 18330.22<br />count: 64.5740210","confirmed_date: 18328.16<br />count: 64.2150007","confirmed_date: 18326.11<br />count: 63.6406693","confirmed_date: 18324.06<br />count: 62.8277436","confirmed_date: 18322.01<br />count: 61.7529409","confirmed_date: 18319.96<br />count: 60.3929782","confirmed_date: 18317.91<br />count: 58.7245725","confirmed_date: 18315.86<br />count: 56.7244408","confirmed_date: 18313.81<br />count: 54.3693002","confirmed_date: 18311.76<br />count: 51.6492308","confirmed_date: 18309.71<br />count: 48.6049752","confirmed_date: 18307.66<br />count: 45.2417639","confirmed_date: 18305.61<br />count: 41.5597378","confirmed_date: 18303.56<br />count: 37.5590376","confirmed_date: 18301.51<br />count: 33.2398042","confirmed_date: 18299.46<br />count: 28.6021782","confirmed_date: 18297.41<br />count: 23.6463006","confirmed_date: 18295.35<br />count: 18.3723120","confirmed_date: 18293.30<br />count: 12.7803532","confirmed_date: 18291.25<br />count:  6.8705650","confirmed_date: 18289.20<br />count:  0.6430882","confirmed_date: 18287.15<br />count:         NA","confirmed_date: 18285.10<br />count:         NA","confirmed_date: 18283.05<br />count:         NA","confirmed_date: 18281.00<br />count:         NA","confirmed_date: 18281.00<br />count:         NA"],"type":"scatter","mode":"lines","line":{"width":7.55905511811024,"color":"rgba(255,0,0,0.4)","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":45.4063926940639,"r":7.30593607305936,"b":30.1369863013699,"l":43.1050228310502},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(245,230,225,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Number of new confirmed people","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[18272.9,18451.1],"tickmode":"array","ticktext":["2月","3月","4月","5月","6月","7月"],"tickvals":[18293,18322,18353,18383,18414,18444],"categoryorder":"array","categoryarray":["2月","3月","4月","5月","6月","7月"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Date","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-7.5,157.5],"tickmode":"array","ticktext":["0","50","100","150"],"tickvals":[0,50,100,150],"categoryorder":"array","categoryarray":["0","50","100","150"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Number","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"9903fb76a3f":{"x":{},"y":{},"type":"scatter"},"9907dde14d4":{"x":{},"y":{}}},"cur_data":"9903fb76a3f","visdat":{"9903fb76a3f":["function (y) ","x"],"9907dde14d4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 1: Number of new confirmed people
+</p>
+</div>
+</div>
+<h2 id="number-of-confirmed-people">Number of confirmed people</h2>
+<p>According to the Figure <a href="#fig:p2">2</a>, We can find that the vast majority of infected people come from these three places including Seoul, Gyeongsangbuk-do, Gyeonggi-do, and the number of people in other places is much smaller than them. Even Incheon, the fourth most infected place, is only a quarter of Gyeonggi-do.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:p2"></span>
+<div id="htmlwidget-d2486bf9576ef600222a" style="width:624px;height:384px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d2486bf9576ef600222a">{"x":{"data":[{"orientation":"h","width":[0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.899999999999999,0.899999999999999,0.899999999999999,0.899999999999999,0.9,0.9,0.9,0.9,0.899999999999999,0.9],"base":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"x":[151,56,168,137,119,63,44,1208,1254,133,343,19,27,25,51,1312,55],"y":[12,7,13,11,9,8,4,15,16,10,14,1,3,2,5,17,6],"text":["reorder(province, count): Busan<br />count:  151","reorder(province, count): Chungcheongbuk-do<br />count:   56","reorder(province, count): Chungcheongnam-do<br />count:  168","reorder(province, count): Daegu<br />count:  137","reorder(province, count): Daejeon<br />count:  119","reorder(province, count): Gangwon-do<br />count:   63","reorder(province, count): Gwangju<br />count:   44","reorder(province, count): Gyeonggi-do<br />count: 1208","reorder(province, count): Gyeongsangbuk-do<br />count: 1254","reorder(province, count): Gyeongsangnam-do<br />count:  133","reorder(province, count): Incheon<br />count:  343","reorder(province, count): Jeju-do<br />count:   19","reorder(province, count): Jeollabuk-do<br />count:   27","reorder(province, count): Jeollanam-do<br />count:   25","reorder(province, count): Sejong<br />count:   51","reorder(province, count): Seoul<br />count: 1312","reorder(province, count): Ulsan<br />count:   55"],"type":"bar","marker":{"autocolorscale":false,"color":"rgba(173,216,230,0.9)","line":{"width":1.88976377952756,"color":"rgba(0,0,0,1)"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[151,56,168,137,119,63,44,1208,1254,133,343,19,27,25,51,1312,55],"y":[12,7,13,11,9,8,4,15,16,10,14,1,3,2,5,17,6],"text":[151,56,168,137,119,63,44,1208,1254,133,343,19,27,25,51,1312,55],"hovertext":["count:  151<br />reorder(province, count): Busan<br />count:  151","count:   56<br />reorder(province, count): Chungcheongbuk-do<br />count:   56","count:  168<br />reorder(province, count): Chungcheongnam-do<br />count:  168","count:  137<br />reorder(province, count): Daegu<br />count:  137","count:  119<br />reorder(province, count): Daejeon<br />count:  119","count:   63<br />reorder(province, count): Gangwon-do<br />count:   63","count:   44<br />reorder(province, count): Gwangju<br />count:   44","count: 1208<br />reorder(province, count): Gyeonggi-do<br />count: 1208","count: 1254<br />reorder(province, count): Gyeongsangbuk-do<br />count: 1254","count:  133<br />reorder(province, count): Gyeongsangnam-do<br />count:  133","count:  343<br />reorder(province, count): Incheon<br />count:  343","count:   19<br />reorder(province, count): Jeju-do<br />count:   19","count:   27<br />reorder(province, count): Jeollabuk-do<br />count:   27","count:   25<br />reorder(province, count): Jeollanam-do<br />count:   25","count:   51<br />reorder(province, count): Sejong<br />count:   51","count: 1312<br />reorder(province, count): Seoul<br />count: 1312","count:   55<br />reorder(province, count): Ulsan<br />count:   55"],"textfont":{"size":13.2283464566929,"color":"rgba(0,0,0,1)"},"type":"scatter","mode":"text","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":45.4063926940639,"r":7.30593607305936,"b":30.1369863013699,"l":124.931506849315},"plot_bgcolor":"rgba(235,235,235,1)","paper_bgcolor":"rgba(245,230,225,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"Region where infection was detected","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-65.6,1377.6],"tickmode":"array","ticktext":["0","500","1000"],"tickvals":[0,500,1000],"categoryorder":"array","categoryarray":["0","500","1000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.65296803652968,"tickwidth":0,"showticklabels":false,"tickfont":{"color":null,"family":null,"size":0},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Number","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.4,17.6],"tickmode":"array","ticktext":["Jeju-do","Jeollanam-do","Jeollabuk-do","Gwangju","Sejong","Ulsan","Chungcheongbuk-do","Gangwon-do","Daejeon","Gyeongsangnam-do","Daegu","Busan","Chungcheongnam-do","Incheon","Gyeonggi-do","Gyeongsangbuk-do","Seoul"],"tickvals":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],"categoryorder":"array","categoryarray":["Jeju-do","Jeollanam-do","Jeollabuk-do","Gwangju","Sejong","Ulsan","Chungcheongbuk-do","Gangwon-do","Daejeon","Gyeongsangnam-do","Daegu","Busan","Chungcheongnam-do","Incheon","Gyeonggi-do","Gyeongsangbuk-do","Seoul"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Region","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"990fba55c0":{"x":{},"y":{},"type":"bar"},"9907c8bd18":{"label":{},"x":{},"y":{}}},"cur_data":"990fba55c0","visdat":{"990fba55c0":["function (y) ","x"],"9907c8bd18":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+Figure 2: Region where infection was detected
+</p>
+</div>
+</div>
+<h1 id="conclusion">Conclusion</h1>
+<p>By the end of February, the number of new infected in Korea was growing rapidly, but since then the number of new cases has been decreasing day by day.</p>
+<p>The infections are most often found in the Seoul.</p>
+<h1 id="packages">Packages</h1>
+<p>Thanks for the providers of these packages used as follows:</p>
+<ul>
+<li><p>ggplot2 <span class="citation" data-cites="ggplot2">(Wickham <a href="#ref-ggplot2" role="doc-biblioref">2016</a>)</span></p></li>
+<li><p>tidyverse <span class="citation" data-cites="tidyverse">(Wickham et al. <a href="#ref-tidyverse" role="doc-biblioref">2019</a>)</span></p></li>
+<li><p>plotly <span class="citation" data-cites="plotly">(Sievert <a href="#ref-plotly" role="doc-biblioref">2020</a>)</span></p></li>
+</ul>
+<div id="refs" class="references" role="doc-bibliography">
+<div id="ref-plotly">
+<p>Sievert, Carson. 2020. <em>Interactive Web-Based Data Visualization with R, Plotly, and Shiny</em>. Chapman; Hall/CRC. <a href="https://plotly-r.com">https://plotly-r.com</a>.</p>
+</div>
+<div id="ref-ggplot2">
+<p>Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.</p>
+</div>
+<div id="ref-tidyverse">
+<p>Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy D’Agostino McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to the tidyverse.” <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.</p>
+</div>
+</div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<script id="distill-bibliography" type="text/bibtex">
+@Book{ggplot2,
+    author = {Hadley Wickham},
+    title = {ggplot2: Elegant Graphics for Data Analysis},
+    publisher = {Springer-Verlag New York},
+    year = {2016},
+    isbn = {978-3-319-24277-4},
+    url = {https://ggplot2.tidyverse.org},
+  }
+
+@Article{tidyverse,
+    title = {Welcome to the {tidyverse}},
+    author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain Fran莽ois and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill M眉ller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},
+    year = {2019},
+    journal = {Journal of Open Source Software},
+    volume = {4},
+    number = {43},
+    pages = {1686},
+    doi = {10.21105/joss.01686},
+  }
+
+@Book{plotly,
+    author = {Carson Sievert},
+    title = {Interactive Web-Based Data Visualization with R, plotly, and shiny},
+    publisher = {Chapman and Hall/CRC},
+    year = {2020},
+    isbn = {9781138331457},
+    url = {https://plotly-r.com},
+  }
+</script>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
