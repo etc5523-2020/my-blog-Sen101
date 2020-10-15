@@ -4,7 +4,7 @@ description: |
  This blog is a self-reflection
 author:
   - name: Sen Wang 
-    url: {}
+    url: https://hardcore-lumiere-7c7635.netlify.app/
 date: 10-15-2020
 output:
   distill::distill_article:
