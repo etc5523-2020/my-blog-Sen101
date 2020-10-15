@@ -1,5 +1,23 @@
 [
   {
+    "path": "posts/Blog3/",
+    "title": "Shiny App Self Review",
+    "description": "This blog is a self-reflection",
+    "author": [
+      {
+        "name": "Sen Wang",
+        "url": {}
+      }
+    ],
+    "date": "2020-10-15",
+    "categories": [
+      "Shiny app"
+    ],
+    "preview": {},
+    "last_modified": "2020-10-15T21:01:43+11:00",
+    "input_file": "Shiny-App-Self-Review.utf8.md"
+  },
+  {
     "path": "posts/Blog2/",
     "title": "covid-19 in South Korea",
     "description": "This blog will introduce the COVID-19 situation in South Korea",

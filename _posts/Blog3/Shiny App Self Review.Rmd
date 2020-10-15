@@ -11,12 +11,84 @@ output:
     self_contained: false
 categories:
   - Shiny app
-bibliography: references.bib
-biblio-style: authoryear-comp
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
-11
+
+## Shiny app for COVID-19 Global Cases
+
+In this section, I will introduce my Shiny web app and what it does.
+
+### Introduction
+
+This shiny application is designed to provide a global overview of the COVID-19 epidemic and let people clearly give people people more clearly understand the epidemic situation of each country.
+
+[There](https://github.com/etc5523-2020/shiny-assessment-Sen101) are more information and codes about my app.
+
+### What it does
+
+There are five parts in my shiny app.
+
+The first part is the covid-19 situation in different countries and users can select the different countries to know the different cases trend by date.
+
+The second part is the global map about the covid-19 cases and users can select the date and type to know the different situations in the world.
+
+The third part is the table and users can search any country and state data in the table.
+
+The fourth part is something about the app.
+
+The last part is the instructions of this app.
+
+## Self Review
+
+In this section, I will summarize what I did well and what I didn't do well.
+
+### What did you do well?
+
+I think I have a appropriate shiny app design structure to guide users, have a good user interactions to let people know which different countries' and dates' epidemic situation chosen by themselves and have a good explanation to study users how to use this app.
+
+### What are the points you can improve on?
+
+In my opinion, I need to improve two points. The first one is the UI design. I didn't design the UI well enough to make it look good to the user.
+The second one is the second part of my app. I think the map is too big, so it will take a long time to load.
+
+### What are some things that you’d like to add that’s plausible?
+
+I should add a new variable for existing confirmed so that users can have a better understanding of the current epidemic situation in this country.
+
+I should show the most top 10 serious epidemic countries to remind users.
+
+### What are some things that you’d like to add that cannot be done yet due to limitation in data or technology? 
+
+The data limitation: It's hard for me to get much more detailed data on what's going on in the epidemic like whether the weather is going to have an impact on the spread of the epidemic.
+
+The technology limitation is that when I did my shiny app, I found that the map was so big that it took a long time to load but I couldn't find a way to solve it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
