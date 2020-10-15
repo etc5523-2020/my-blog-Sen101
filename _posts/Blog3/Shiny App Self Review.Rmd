@@ -1,0 +1,22 @@
+---
+title: "Shiny App Self Review"
+description: |
+ This blog is a self-reflection
+author:
+  - name: Sen Wang 
+    url: {}
+date: 10-15-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - Shiny app
+bibliography: references.bib
+biblio-style: authoryear-comp
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+11
