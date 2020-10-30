@@ -1,0 +1,105 @@
+---
+title: "Peer review for covidseasonality"
+description: |
+ This blog is a peer review
+author:
+  - name: Sen Wang 
+    url: 
+date: 10-30-2020
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - R package
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+## Overview 
+
+The r package named `covidseasonality` is created by Brenwin, which is to assess the seasonal effect of COVID-19 by examining cases in each hemisphere by comparing seasonal changes.
+
+## What did I think this package would do? Did it do it?
+
+When I first see this package, there is a viedo in the `readme` file which is a brief introduction to the package. Its aim is to assess the novel coronavirus seasonality effects by examining the cases in each hemisphere as cold weather migrates to the Northern Hemisphere. So, before I started installing and downloading this package, I thought it would give me an idea of how seasonal changes affect COVID-19. But I don't know what other features this package contains or how to use them.
+
+When I actually installed this package, I found it to be an excellent package with complete structure and clear logic. It almost lived up to my expectations. I can get data easily, run functions smoothly, and most importantly, the shiny app can start smoothly. But I think the author is not very detailed introduction to some of his function only part are introduced. What's more, I found the map very attractive and gave me a good experience.
+
+## Suggestion
+
+In the code section, I don't see any problems. I think he's done a great job.
+
+In the shiny app section, I think the UI interface needs to be improved, it's very simple and only black compared to the author's drawings. Mayne author can use the dashborad to change the ui interface. Try to make a nice, complex UI, and it will look perfect.
+
+In the documentation section, as I said above, I don't go into much detail. Author needs to write more introducations for this package's function.
+
+## Learning
+
+The biggest prize is the second part of the author's map. Because in my shiny app, I also make a map but it is too big to load when users to load shiny app and it looks simple and doesn't provide a great user experience. So this is a very good sample for me to improve my map.
+
+## Appendix
+
+### Documentation 
+
+The package includes all the following forms of documentation: 
+
+- [✔] **Installation instructions:** for the package is found in README. 
+
+The instruction is clearly documented in READEME.
+
+
+- [✔] **Vignette(s)** demonstrating major functionality that runs successfully locally.
+
+The vignettes is well structured and has a detailed introduction to the package and the use of the shiny app. 
+
+
+- [✔] **Function Documentation:** for all exported functions in R help 
+
+The function documentation is clearly written and can be easily understood by users. But it needs to add more introductions about all functions.
+
+
+- [✔] **Examples** for all exported functions in R Help that run successfully locally.
+
+The video sample is a very good use to make users clear to use this package.
+
+
+### Functionality 
+
+- [✔] **Installation:** Installation succeeds as documented.
+
+The package can be installed successfully without any bugs.
+
+
+- [✔] **Functionality:** Any functional claims of the software been confirmed.
+
+All functions can be used successfully.
+
+
+- [✔] **Automated tests:** Unit tests cover essential functions of the package and a 
+reasonable range of inputs and conditions. All tests pass on the local machine.
+
+All unit tests passed without any errors.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
